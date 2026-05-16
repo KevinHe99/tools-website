@@ -95,6 +95,16 @@ const tools = [
       </svg>
     ),
   },
+  {
+    href: "/hanzi-pinyin",
+    text: "Hanzi → Pinyin",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" className="stroke-gray-600 group-hover:stroke-current dark:stroke-gray-300">
+        <path d="M4 6h7M4 12h7M4 18h7" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M15 8l4 4-4 4" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+  },
 ];
 
 const resources = [

@@ -13,5 +13,9 @@ export default [index("routes/RouteHome.tsx"),
         index("routes/RouteSVGToImage.tsx"),
     ]),
 
+    ...prefix("hanzi-pinyin", [
+        index("routes/RouteHanziPinyin.tsx"),
+    ]),
+
     route("*", "routes/Route404.tsx")
 ] satisfies RouteConfig;
