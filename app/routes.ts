@@ -4,6 +4,9 @@ export default [index("routes/RouteHome.tsx"),
     ...prefix("base64-convertor", [
         index("routes/RouteBase64.tsx"),
     ]),
+    ...prefix("qr-code", [
+        index("routes/RouteQRCode.tsx"),
+    ]),
 
     ...prefix("uuid-generator", [
         index("routes/RouteUUID.tsx"),
