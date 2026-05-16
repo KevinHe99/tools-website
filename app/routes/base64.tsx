@@ -1,5 +1,5 @@
 import type { Route } from "./+types/base64";
-import { PageBase64Convertor } from "../tools/base64/PageBase64Convertor";
+import { PageBase64Convertor } from "../pages/tools/base64/PageBase64Convertor";
 
 export function meta({}: Route.MetaArgs) {
   return [
