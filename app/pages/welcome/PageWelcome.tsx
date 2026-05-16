@@ -22,6 +22,24 @@ export function PageWelcome() {
         <div className="max-w-[300px] w-full space-y-6 px-4">
           <nav className="rounded-3xl border border-gray-200 p-6 dark:border-gray-700 space-y-4">
             <p className="leading-6 text-gray-700 dark:text-gray-200 text-center">
+              Tools
+            </p>
+            <ul>
+              {tools.map(({ href, text, icon }) => (
+                <li key={href}>
+                  <a
+                    className="group flex items-center gap-3 self-stretch p-3 leading-normal text-blue-700 hover:underline dark:text-blue-500"
+                    href={href}
+                  >
+                    {icon}
+                    {text}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <nav className="rounded-3xl border border-gray-200 p-6 dark:border-gray-700 space-y-4">
+            <p className="leading-6 text-gray-700 dark:text-gray-200 text-center">
               What&apos;s next?
             </p>
             <ul>
@@ -45,6 +63,30 @@ export function PageWelcome() {
     </main>
   );
 }
+
+const tools = [
+  {
+    href: "/base64-convertor",
+    text: "Base64 Converter",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 24" fill="none" className="stroke-gray-600 group-hover:stroke-current dark:stroke-gray-300">
+        <path d="M4 6h16M4 12h16M4 18h7" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+  },
+  {
+    href: "/qr-code",
+    text: "QR Code Generator",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 24" fill="none" className="stroke-gray-600 group-hover:stroke-current dark:stroke-gray-300">
+        <rect x="3" y="3" width="7" height="7" rx="1" strokeWidth="1.5" />
+        <rect x="14" y="3" width="7" height="7" rx="1" strokeWidth="1.5" />
+        <rect x="3" y="14" width="7" height="7" rx="1" strokeWidth="1.5" />
+        <path d="M14 14h2v2h-2zM18 14h3v2h-3zM14 18h3v3h-3zM19 18h2v3h-2z" strokeWidth="0" fill="currentColor" className="fill-gray-600 group-hover:fill-current dark:fill-gray-300" />
+      </svg>
+    ),
+  },
+];
 
 const resources = [
   {
