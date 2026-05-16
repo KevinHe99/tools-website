@@ -46,6 +46,7 @@ const NAV_LINKS = [
   { to: "/base64-convertor", label: "Base64" },
   { to: "/uuid-generator", label: "UUID" },
   { to: "/svg-to-image", label: "SVG to Image" },
+  { to: "/hanzi-pinyin", label: "Hanzi → Pinyin" },
 ];
 
 function NavBar() {
