@@ -2,6 +2,7 @@ import {
   isRouteErrorResponse,
   Links,
   Meta,
+  NavLink,
   Outlet,
   Scripts,
   ScrollRestoration,
@@ -41,8 +42,50 @@ export function Layout({ children }: { children: React.ReactNode }) {
   );
 }
 
+const NAV_LINKS = [
+  { to: "/base64-convertor", label: "Base64" },
+  { to: "/uuid-generator", label: "UUID" },
+  { to: "/svg-to-image", label: "SVG to Image" },
+  { to: "/hanzi-pinyin", label: "Hanzi → Pinyin" },
+];
+
+function NavBar() {
+  return (
+    <nav className="sticky top-0 z-10 bg-white dark:bg-gray-950 border-b border-gray-200 dark:border-gray-700">
+      <div className="max-w-5xl mx-auto px-4 h-14 flex items-center gap-6">
+        <NavLink
+          to="/"
+          className="text-sm font-semibold text-gray-900 dark:text-gray-100 mr-2"
+        >
+          Tools
+        </NavLink>
+        {NAV_LINKS.map(({ to, label }) => (
+          <NavLink
+            key={to}
+            to={to}
+            className={({ isActive }) =>
+              `text-sm transition-colors ${
+                isActive
+                  ? "text-blue-600 dark:text-blue-400 font-medium"
+                  : "text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100"
+              }`
+            }
+          >
+            {label}
+          </NavLink>
+        ))}
+      </div>
+    </nav>
+  );
+}
+
 export default function App() {
-  return <Outlet />;
+  return (
+    <>
+      <NavBar />
+      <Outlet />
+    </>
+  );
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {

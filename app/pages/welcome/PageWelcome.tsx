@@ -69,12 +69,42 @@ const tools = [
     href: "/base64-convertor",
     text: "Base64 Converter",
     icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 24" fill="none" className="stroke-gray-600 group-hover:stroke-current dark:stroke-gray-300">
-        <path d="M4 6h16M4 12h16M4 18h7" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" className="stroke-gray-600 group-hover:stroke-current dark:stroke-gray-300">
+        <path d="M4 7h16M4 12h16M4 17h10" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
   },
   {
+    href: "/uuid-generator",
+    text: "UUID Generator",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" className="stroke-gray-600 group-hover:stroke-current dark:stroke-gray-300">
+        <rect x="3" y="8" width="18" height="8" rx="2" strokeWidth="1.5" />
+        <path d="M7 12h.01M12 12h.01M17 12h.01" strokeWidth="2" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+  {
+    href: "/svg-to-image",
+    text: "SVG to Image",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" className="stroke-gray-600 group-hover:stroke-current dark:stroke-gray-300">
+        <rect x="3" y="3" width="18" height="18" rx="2" strokeWidth="1.5" />
+        <circle cx="8.5" cy="8.5" r="1.5" strokeWidth="1.5" />
+        <path d="M21 15l-5-5L5 21" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+  },
+  {
+    href: "/hanzi-pinyin",
+    text: "Hanzi → Pinyin",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" className="stroke-gray-600 group-hover:stroke-current dark:stroke-gray-300">
+        <path d="M4 6h7M4 12h7M4 18h7" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M15 8l4 4-4 4" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+  },{
     href: "/qr-code",
     text: "QR Code Generator",
     icon: (
@@ -83,9 +113,7 @@ const tools = [
         <rect x="14" y="3" width="7" height="7" rx="1" strokeWidth="1.5" />
         <rect x="3" y="14" width="7" height="7" rx="1" strokeWidth="1.5" />
         <path d="M14 14h2v2h-2zM18 14h3v2h-3zM14 18h3v3h-3zM19 18h2v3h-2z" strokeWidth="0" fill="currentColor" className="fill-gray-600 group-hover:fill-current dark:fill-gray-300" />
-      </svg>
-    ),
-  },
+  }
 ];
 
 const resources = [

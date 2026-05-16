@@ -8,5 +8,17 @@ export default [index("routes/RouteHome.tsx"),
         index("routes/RouteQRCode.tsx"),
     ]),
 
+    ...prefix("uuid-generator", [
+        index("routes/RouteUUID.tsx"),
+    ]),
+
+    ...prefix("svg-to-image", [
+        index("routes/RouteSVGToImage.tsx"),
+    ]),
+
+    ...prefix("hanzi-pinyin", [
+        index("routes/RouteHanziPinyin.tsx"),
+    ]),
+
     route("*", "routes/Route404.tsx")
 ] satisfies RouteConfig;
