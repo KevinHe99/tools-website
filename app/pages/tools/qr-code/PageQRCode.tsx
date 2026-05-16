@@ -1,5 +1,5 @@
 import { useState, useRef, useCallback } from "react";
-import QRCode from "react-qr-code";
+import { QRCode } from "react-qr-code";
 
 type Size = 128 | 256 | 512;
 
