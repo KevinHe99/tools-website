@@ -9,5 +9,9 @@ export default [index("routes/RouteHome.tsx"),
         index("routes/RouteUUID.tsx"),
     ]),
 
+    ...prefix("svg-to-image", [
+        index("routes/RouteSVGToImage.tsx"),
+    ]),
+
     route("*", "routes/Route404.tsx")
 ] satisfies RouteConfig;
