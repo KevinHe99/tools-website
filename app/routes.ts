@@ -5,5 +5,9 @@ export default [index("routes/RouteHome.tsx"),
         index("routes/RouteBase64.tsx"),
     ]),
 
+    ...prefix("uuid-generator", [
+        index("routes/RouteUUID.tsx"),
+    ]),
+
     route("*", "routes/Route404.tsx")
 ] satisfies RouteConfig;

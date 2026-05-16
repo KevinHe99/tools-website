@@ -22,6 +22,24 @@ export function PageWelcome() {
         <div className="max-w-[300px] w-full space-y-6 px-4">
           <nav className="rounded-3xl border border-gray-200 p-6 dark:border-gray-700 space-y-4">
             <p className="leading-6 text-gray-700 dark:text-gray-200 text-center">
+              Tools
+            </p>
+            <ul>
+              {tools.map(({ href, text, icon }) => (
+                <li key={href}>
+                  <a
+                    className="group flex items-center gap-3 self-stretch p-3 leading-normal text-blue-700 hover:underline dark:text-blue-500"
+                    href={href}
+                  >
+                    {icon}
+                    {text}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <nav className="rounded-3xl border border-gray-200 p-6 dark:border-gray-700 space-y-4">
+            <p className="leading-6 text-gray-700 dark:text-gray-200 text-center">
               What&apos;s next?
             </p>
             <ul>
@@ -45,6 +63,28 @@ export function PageWelcome() {
     </main>
   );
 }
+
+const tools = [
+  {
+    href: "/base64-convertor",
+    text: "Base64 Converter",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" className="stroke-gray-600 group-hover:stroke-current dark:stroke-gray-300">
+        <path d="M4 7h16M4 12h16M4 17h10" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+  },
+  {
+    href: "/uuid-generator",
+    text: "UUID Generator",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" className="stroke-gray-600 group-hover:stroke-current dark:stroke-gray-300">
+        <rect x="3" y="8" width="18" height="8" rx="2" strokeWidth="1.5" />
+        <path d="M7 12h.01M12 12h.01M17 12h.01" strokeWidth="2" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+];
 
 const resources = [
   {
