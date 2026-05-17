@@ -113,7 +113,21 @@ const tools = [
         <rect x="14" y="3" width="7" height="7" rx="1" strokeWidth="1.5" />
         <rect x="3" y="14" width="7" height="7" rx="1" strokeWidth="1.5" />
         <path d="M14 14h2v2h-2zM18 14h3v2h-3zM14 18h3v3h-3zM19 18h2v3h-2z" strokeWidth="0" fill="currentColor" className="fill-gray-600 group-hover:fill-current dark:fill-gray-300" />
-  }
+      </svg>
+    ),
+  },
+  {
+    href: "/color-picker",
+    text: "Color Picker",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" className="stroke-gray-600 group-hover:stroke-current dark:stroke-gray-300">
+        <path d="M12 2a10 10 0 1 0 0 20 2 2 0 0 0 0-4h-1a2 2 0 0 1 0-4h3a4 4 0 0 0 4-4 8 8 0 0 0-6-8Z" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx="7.5" cy="10.5" r="1" fill="currentColor" />
+        <circle cx="12" cy="7.5" r="1" fill="currentColor" />
+        <circle cx="16.5" cy="10.5" r="1" fill="currentColor" />
+      </svg>
+    ),
+  },
 ];
 
 const resources = [

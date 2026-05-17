@@ -20,5 +20,9 @@ export default [index("routes/RouteHome.tsx"),
         index("routes/RouteHanziPinyin.tsx"),
     ]),
 
+    ...prefix("color-picker", [
+        index("routes/RouteColorPicker.tsx"),
+    ]),
+
     route("*", "routes/Route404.tsx")
 ] satisfies RouteConfig;

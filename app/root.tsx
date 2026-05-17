@@ -47,6 +47,7 @@ const NAV_LINKS = [
   { to: "/uuid-generator", label: "UUID" },
   { to: "/svg-to-image", label: "SVG to Image" },
   { to: "/hanzi-pinyin", label: "Hanzi → Pinyin" },
+  { to: "/color-picker", label: "Color Picker" },
 ];
 
 function NavBar() {
