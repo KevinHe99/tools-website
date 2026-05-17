@@ -24,5 +24,9 @@ export default [index("routes/RouteHome.tsx"),
         index("routes/RouteColorPicker.tsx"),
     ]),
 
+    ...prefix("pomodoro", [
+        index("routes/RoutePomodoro.tsx"),
+    ]),
+
     route("*", "routes/Route404.tsx")
 ] satisfies RouteConfig;

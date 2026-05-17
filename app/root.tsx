@@ -48,6 +48,7 @@ const NAV_LINKS = [
   { to: "/svg-to-image", label: "SVG to Image" },
   { to: "/hanzi-pinyin", label: "Hanzi → Pinyin" },
   { to: "/color-picker", label: "Color Picker" },
+  { to: "/pomodoro", label: "Pomodoro" },
 ];
 
 function NavBar() {

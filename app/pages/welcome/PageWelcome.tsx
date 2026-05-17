@@ -128,6 +128,18 @@ const tools = [
       </svg>
     ),
   },
+  {
+    href: "/pomodoro",
+    text: "Pomodoro Timer",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" className="stroke-gray-600 group-hover:stroke-current dark:stroke-gray-300">
+        <circle cx="12" cy="14" r="8" strokeWidth="1.5" />
+        <path d="M12 14V9" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M9 2h6M12 2v3" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="m18 5 1.5 1.5" strokeWidth="1.5" strokeLinecap="round" />
+      </svg>
+    ),
+  },
 ];
 
 const resources = [
